@@ -1,3 +1,6 @@
+@use "sass:map";
+@import "theme.scss";
+
 html,
 body {
     margin: 0;
@@ -14,5 +17,30 @@ body {
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
+    // background: map-get($map: $theme_color, $key: "main");
+    margin: auto;
+}
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col_6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.header_top {
+    background: red;
+}
+
+.header_top_right {
+    display: flex;
+    justify-content: end;
+    ul{
+        display: flex;
+        column-gap: 5px;
+        list-style: none;
+    }
 }

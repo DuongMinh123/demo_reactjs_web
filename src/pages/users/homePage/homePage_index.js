@@ -1,7 +1,7 @@
 import {memo} from "react"
 
 const HomePage = () => {
-    return <div className="container">Header</div>;
+    return <div></div>;
 }
 
 export default memo(HomePage); 
